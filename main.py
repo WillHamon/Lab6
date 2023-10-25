@@ -2,7 +2,7 @@ def encode(password):
     return ''.join(str((int(i) + 3) % 10) for i in password)
 
 def decode(password):
-    return None # add decode here
+    return ''.join(str((int(i) - 3) % 10) for i in password)
 
 def main():
     encoded = None
